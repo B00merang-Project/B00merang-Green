@@ -9,7 +9,7 @@ green GTK theme
 
 **License :** GPL v3
 
-**More info : http://b00merang.weebly.com/b00merang-green.html
+**More info :** http://b00merang.weebly.com/b00merang-green.html
 
 ### Manual installation
 
