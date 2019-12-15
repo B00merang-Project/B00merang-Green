@@ -1,7 +1,7 @@
 /* ###################################################################
- * Section common with Gnome Shell
- * ... contains a few cinnamon specific styles (rare occurences)
- * ###################################################################*/
+* Section common with Gnome Shell
+* ... contains a few cinnamon specific styles (rare occurences)
+* ###################################################################*/
 
 stage {
 	font-family: "Droid Sans", sans-serif;
@@ -49,15 +49,15 @@ StScrollBar StButton#hhandle {
 
 StScrollBar StButton#vhandle:hover,
 StScrollBar StButton#hhandle:hover {
-        background-gradient-start: #032d29;
-        background-gradient-end: #032d29;
+	background-gradient-start: #032d29;
+	background-gradient-end: #032d29;
 	border: 1px solid rgba(0,128,0,0.3);
 }
 
 #Tooltip {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.90); /* NEW_COLOR */
-        background-gradient-end: rgba(0,128,0,0.90);
+	background-gradient-start: rgba(0,128,0,0.90); /* NEW_COLOR */
+	background-gradient-end: rgba(0,128,0,0.90);
 	border-radius: 0px;
 	padding: 3px 10px;
 	font-weight: normal;
@@ -65,8 +65,8 @@ StScrollBar StButton#hhandle:hover {
 }
 
 /* ===================================================================
- * Shared button properties
- * ===================================================================*/
+* Shared button properties
+* ===================================================================*/
 
 .notification-button,
 .notification-icon-button,
@@ -86,8 +86,8 @@ StScrollBar StButton#hhandle:hover {
 .notification-icon-button:hover,
 .hotplug-notification-item:hover,
 .modal-dialog-button:hover {
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	border: 1px solid rgba(0,128,0,0.3);
 }
 
@@ -106,8 +106,8 @@ StScrollBar StButton#hhandle:hover {
 
 .hotplug-resident-eject-button:hover {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	border: 1px solid rgba(0,128,0,0.3);
 }
 
@@ -117,13 +117,13 @@ StScrollBar StButton#hhandle:hover {
 .hotplug-resident-eject-button:active,
 .modal-dialog-button:active,
 .modal-dialog-button:pressed {
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 /* ===================================================================
- * PopupMenu (popupMenu.js)
- * ===================================================================*/
+* PopupMenu (popupMenu.js)
+* ===================================================================*/
 
 .popup-menu-boxpointer {
 	-arrow-background-color: transparent;
@@ -132,26 +132,24 @@ StScrollBar StButton#hhandle:hover {
 	-arrow-border-radius: 0px;
 	-arrow-border-width: 0px;
 }
+.menu,
 .popup-menu {
-  	background-gradient-direction: vertical;
-      	background-gradient-start:  rgba(3, 45, 41, 0.6);
-      	background-gradient-end: rgba(3, 45, 41, 0.6);
-       	border: 1px #326b65;
+	background-gradient-direction: vertical;
+	background-gradient-start:  rgba(3, 45, 41, 0.6);
+	background-gradient-end: rgba(3, 45, 41, 0.6);
+	border: 1px #326b65;
 	border-left: 0px;
 	border-right: 0px;
-box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.76);
-
-    color: #1a938b;
-    font-size: 9pt;
-    min-width: 66px;
-	 
+	box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.76);
+	color: #1a938b;
+	font-size: 9pt;
+	min-width: 66px;
 }
 .popup-submenu-menu-item:open {
-
 }
 .popup-sub-menu {
-	color: #1a938b;	
-       	border: 1px #326b65;
+	color: #1a938b;
+	border: 1px #326b65;
 	border-left: 0px;
 	border-right: 0px;
 }
@@ -168,41 +166,41 @@ box-shadow: 0px 0px 6px 3px rgba(0,0,0,0.76);
 	border-width: 0px;
 }
 .popup-sub-menu StScrollBar StBin#vhandle {
-  	background-color: rgba(41,41,41,1);
-    	border-width: 0px;
+	background-color: rgba(41,41,41,1);
+	border-width: 0px;
 }
 .popup-combo-menu {
-   	 color: #eeeeee;
-    	background-gradient-direction: vertical;
- 	background-gradient-start: rgba(52,52,52,0.95);
- 	background-gradient-end: rgba(44,44,44,0.95);
-    	border: 1px solid rgba(255,255,255,0.1);
-    	padding:  0em;
-    	font-size: 7.5pt;
-    	border-radius: 2px;
+	color: #eeeeee;
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(52,52,52,0.95);
+	background-gradient-end: rgba(44,44,44,0.95);
+	border: 1px solid rgba(255,255,255,0.1);
+	padding:  0em;
+	font-size: 7.5pt;
+	border-radius: 2px;
 }
 
 /* The remaining popup-menu sizing is all done in ems, so that if you
- * override .popup-menu.font-size, everything else will scale with it.
- */
+* override .popup-menu.font-size, everything else will scale with it.
+*/
 .popup-menu-content {
-padding: 0.8em 0em;
+	padding: 0.8em 0em;
 }
 .popup-menu-item {
-padding: .4em 1.75em;
-spacing: 1em;
-    	border: 1px solid transparent;
-    	border-bottom: 0px;
-      	border-left: 0px;
-      	border-right: 0px;
+	padding: .4em 1.75em;
+	spacing: 1em;
+	border: 1px solid transparent;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
 }
 .popup-menu-item:active {
- color: #fff;
-border-image: url('button-hover.svg') 2 2 2 2 stretch;
-border: 1px transparent;
-  	border-bottom: 0px;
-      	border-left: 0px;
-      	border-right: 0px;
+	color: #fff;
+	border-image: url('button-hover.svg') 2 2 2 2 stretch;
+	border: 1px transparent;
+	border-bottom: 0px;
+	border-left: 0px;
+	border-right: 0px;
 }
 .popup-menu-item:insensitive {
 	color: #9f9f9f;
@@ -213,27 +211,24 @@ border: 1px transparent;
 	spacing: 1em;
 }
 .popup-separator-menu-item {
-	background-color: #0a0a0a;
-box-shadow: 0px 1px 1px 0px rgba(220,220,220,0.06);
-	border-radius: 5px; 
-    	-margin-horizontal: 14px;
-    	height: 1px;
+	background-color: #326b65;
+	height: 1px;
 }
 .popup-alternating-menu-item:alternate {
 	font-weight: bold;
 }
 .popup-slider-menu-item {
-background-color: #232527;
- box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
-    height: 1em;
-    min-width: 15em;
-    -slider-height: 0.1em;
-    -slider-background-color: #444;
-    -slider-border-color: rgba(0,0,0,.02);
-    -slider-active-background-color: #42bee1;
-    -slider-active-border-color: rgba(0,0,0,.02);
-    -slider-border-width: 1px;
-    -slider-handle-radius: 0.5em;
+	background-color: #232527;
+	box-shadow:  0px -1px 0px 0px rgba(51,51,51,1);
+	height: 1em;
+	min-width: 15em;
+	-slider-height: 0.1em;
+	-slider-background-color: #444;
+	-slider-border-color: rgba(0,0,0,.02);
+	-slider-active-background-color: #42bee1;
+	-slider-active-border-color: rgba(0,0,0,.02);
+	-slider-border-width: 1px;
+	-slider-handle-radius: 0.5em;
 }
 .popup-device-menu-item {
 	spacing: .5em;
@@ -270,21 +265,21 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Panel (panel.js)
- * ===================================================================*/
+* Panel (panel.js)
+* ===================================================================*/
 
 #panel {
-        border-image: url('panel.png') 80 0 0 0;
+	border-image: url('panel.png') 80 0 0 0;
 	box-shadow: 0px 0px 2px 2px rgba(0,0,0,1);
-        outline: 1px rgba(255,255,255,0.1);
-    color: #326b65;
-    font-size: 9pt;
-    height: 40px;
-    padding: 0px;
+	outline: 1px rgba(255,255,255,0.1);
+	color: #326b65;
+	font-size: 9pt;
+	height: 40px;
+	padding: 0px;
 }
 
 #panelLeft, #panelCenter {
-    spacing: 4px;
+	spacing: 4px;
 }
 
 #panelLeft:dnd {
@@ -338,8 +333,8 @@ background-color: #232527;
 }
 
 .panel-status-button:hover {
-      color: #326b65;
-      border-image: url("item-hover.png") 4; 
+	color: #326b65;
+	border-image: url("item-hover.png") 4;
 }
 
 .system-status-icon {
@@ -408,8 +403,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Overview
- * ===================================================================*/
+* Overview
+* ===================================================================*/
 
 #overview {
 	spacing: 12px;
@@ -425,7 +420,7 @@ background-color: #232527;
 }
 
 .window-caption#selected {
-        background-color: rgba(0,128,0,0.65);
+	background-color: rgba(0,128,0,0.65);
 }
 
 .workspace-controls {
@@ -461,7 +456,7 @@ background-color: #232527;
 }
 
 .workspace-add-button:hover {
-        background-color: rgba(0,128,0,0.65);
+	background-color: rgba(0,128,0,0.65);
 	transition-duration: 100;
 }
 
@@ -511,8 +506,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * ViewSelector
- * ===================================================================*/
+* ViewSelector
+* ===================================================================*/
 #viewSelector {
 	spacing: 1em;
 	font-size: 12pt;
@@ -540,8 +535,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Looking Glass
- * ===================================================================*/
+* Looking Glass
+* ===================================================================*/
 
 #LookingGlassDialog {
 	background-color: rgba(25,25,25,0.50);
@@ -605,7 +600,7 @@ background-color: #232527;
 
 .lg-obj-inspector-button:hover {
 	background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 .lg-dialog .cinnamon-link {
@@ -656,8 +651,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Date applet
- * ===================================================================*/
+* Date applet
+* ===================================================================*/
 
 .calendar {
 	padding: .3em 2em;
@@ -769,8 +764,8 @@ background-color: #232527;
 
 .calendar-today {
 	background-gradient-direction: vertical;
-       background-gradient-start: rgba(0,128,0,0.80);
-       background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	font-weight: bold;
 }
 
@@ -783,8 +778,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Notifications
- * ===================================================================*/
+* Notifications
+* ===================================================================*/
 
 #notification {
 	background-color: rgba(25,25,25,0.85);
@@ -802,9 +797,9 @@ background-color: #232527;
 }
 
 /* We use row-span = 2 for the image cell, which prevents its height preferences to be
-	taken into account during allocation, so its height ends up being limited by the height
-	of the content in the other rows. To avoid showing a stretched image, we set the minimum
-	height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159 */
+taken into account during allocation, so its height ends up being limited by the height
+of the content in the other rows. To avoid showing a stretched image, we set the minimum
+height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 = 159 */
 .notification-with-image {
 	min-height: 159px;
 	color: white;
@@ -886,8 +881,8 @@ background-color: #232527;
 
 .hotplug-resident-mount:hover {
 	background-gradient-direction: vertical;
-       background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	border: 1px solid rgba(0,128,0,0.3);
 }
 
@@ -928,8 +923,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Alt Tab
- * ===================================================================*/
+* Alt Tab
+* ===================================================================*/
 
 #altTabPopup {
 	padding: 8px;
@@ -984,7 +979,7 @@ background-color: #232527;
 .switcher-list .item-box:selected {
 	background-gradient-direction: vertical;
 	background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 .switcher-list .thumbnail-box {
@@ -1002,23 +997,23 @@ background-color: #232527;
 }
 
 .ripple-box {
-    width: 300px;
-    height: 300px;
-    background-gradient-end: rgba(0,128,0,0.8);
-    background-gradient-start: rgba(0,0,0,0.3);
-    background-gradient-direction: radial;
- box-shadow: outset 0px 0px 5px 5px #008000;
- border-radius: 150px;
+	width: 300px;
+	height: 300px;
+	background-gradient-end: rgba(0,128,0,0.8);
+	background-gradient-start: rgba(0,0,0,0.3);
+	background-gradient-direction: radial;
+	box-shadow: outset 0px 0px 5px 5px #008000;
+	border-radius: 150px;
 }
 
 .ripple-box:rtl {
-    width: 300px;
-    height: 300px;
-    background-gradient-end: rgba(0,128,0,0.8);
-    background-gradient-start: rgba(0,0,0,0.3);
-    background-gradient-direction: radial;
- box-shadow: outset 0px 0px 5px 5px #008000;
- border-radius: 150px;
+	width: 300px;
+	height: 300px;
+	background-gradient-end: rgba(0,128,0,0.8);
+	background-gradient-start: rgba(0,0,0,0.3);
+	background-gradient-direction: radial;
+	box-shadow: outset 0px 0px 5px 5px #008000;
+	border-radius: 150px;
 }
 
 .switcher-arrow {
@@ -1031,12 +1026,12 @@ background-color: #232527;
 }
 
 .switcher-preview-backdrop {
-   background-color: rgba(0,0,0,0.6);
+	background-color: rgba(0,0,0,0.6);
 }
 
 /* ===================================================================
- * Modal dialogs
- * ===================================================================*/
+* Modal dialogs
+* ===================================================================*/
 
 .modal-dialog {
 	background-color: rgba(8,94,30,0.5);
@@ -1068,8 +1063,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Run dialog
- * ===================================================================*/
+* Run dialog
+* ===================================================================*/
 
 .run-dialog-label {
 	font-size: 9pt;
@@ -1111,8 +1106,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * End session dialog
- * ===================================================================*/
+* End session dialog
+* ===================================================================*/
 
 .end-session-dialog {
 	spacing: 42px;
@@ -1279,8 +1274,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Policykit authentication dialog
- * ===================================================================*/
+* Policykit authentication dialog
+* ===================================================================*/
 
 .polkit-dialog {
 	/* this is the width of the entire modal popup */
@@ -1381,8 +1376,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Magnifier
- * ===================================================================*/
+* Magnifier
+* ===================================================================*/
 
 .magnifier-zoom-region {
 	border: 2px solid rgba(128, 0, 0, 255);
@@ -1393,8 +1388,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * On screen keyboard
- * ===================================================================*/
+* On screen keyboard
+* ===================================================================*/
 
 #keyboard {
 	background-color: rgba(8,94,30,0.5);
@@ -1428,14 +1423,14 @@ background-color: #232527;
 .keyboard-key:checked,
 .keyboard-key:hover {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 .keyboard-key:active {
 
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 .keyboard-subkeys {
@@ -1449,12 +1444,12 @@ background-color: #232527;
 }
 
 /* ###################################################################
- * Cinnamon Specific Section
- * ###################################################################*/
+* Cinnamon Specific Section
+* ###################################################################*/
 
 /* ===================================================================
- * Menu (menu.js)
- * ===================================================================*/
+* Menu (menu.js)
+* ===================================================================*/
 
 /* Main menu title */
 .menu-favorites-box {
@@ -1473,8 +1468,8 @@ background-color: #232527;
 
 .menu-favorites-button:hover {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	border-radius: 0px;
 	transition-duration: 100;
 }
@@ -1519,8 +1514,8 @@ background-color: #232527;
 	padding-right: 5px;
 	padding-bottom: 5px;
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	border-radius: 0px;
 }
 
@@ -1555,8 +1550,8 @@ background-color: #232527;
 	padding-right: 5px;
 	padding-bottom: 5px;
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	border-radius: 0px;
 	transition-duration: 100;
 }
@@ -1571,13 +1566,13 @@ background-color: #232527;
 
 .menu-category-button-button:hover {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 	border-radius: 0px;
 }
 
 /* Name and description of the currently hovered item in the menu
- * This appears on the bottom right hand corner of the menu*/
+* This appears on the bottom right hand corner of the menu*/
 .menu-selected-app-box {
 	padding-right: 30px;
 	padding-left: 28px;
@@ -1634,8 +1629,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Window list (windowList.js)
- * ===================================================================*/
+* Window list (windowList.js)
+* ===================================================================*/
 
 .window-list-box {
 	spacing: 3px;
@@ -1648,7 +1643,8 @@ background-color: #232527;
 	min-width: 5px;
 }
 
-.window-list-item-box {
+.window-list-item-box,
+.grouped-window-list-item-box {
 	padding-left: 3px;
 	padding-right: 3px;
 	background-color: transparent;
@@ -1657,27 +1653,69 @@ background-color: #232527;
 
 .window-list-item-box:active,
 .window-list-item-box:checked,
-.window-list-item-box:focus {
+.window-list-item-box:focus,
+.grouped-window-list-item-box:active,
+.grouped-window-list-item-box:checked,
+.grouped-window-list-item-box:focus {
 	font-weight: bold;
-        border-image: url("item-active.png") 4;
-        color: #008000;
+	border-image: url("item-active.png") 4;
+	color: #008000;
 }
 
-.window-list-item-box:hover {
-	font-weight: bold;
-        border-image: url("item-hover.png") 4;
-        transition-duration: 100;
+.window-list-item-box:focus,
+.grouped-window-list-item-box:focus {
+	border-image: url("item-focus.png") 4;
 }
 
-.window-list-item-demands-attention {
-       border-image: url("item-attention.png") 4;
-       color: #ff0000;
-       font-weight: bold;
+.window-list-item-box:hover,
+.grouped-window-list-item-box:hover {
+	font-weight: bold;
+	border-image: url("item-hover.png") 4;
+	transition-duration: 100;
+}
+
+.window-list-item-demands-attention,
+.grouped-window-list-item-demands-attention {
+	border-image: url("item-attention.png") 4;
+	color: #ff0000;
+	font-weight: bold;
+}
+
+.window-list-preview,
+.grouped-window-list-thumbnail-menu {
+  spacing: 6px;
+  color: #1a938b;
+  border: 1px solid #326b65;
+  background-color: rgba(3, 45, 41, 0.6);
+  border-radius: 0;
+  padding: 6px 12px 12px 12px;
+  font-size: 1em;
+}
+
+.grouped-window-list-thumbnail-menu > StBoxLayout {
+  padding: 4px;
+}
+
+.grouped-window-list-thumbnail-menu .item-box {
+  padding: 10px;
+  border-radius: 0;
+  spacing: 4px;
+}
+
+.grouped-window-list-thumbnail-menu .item-box:outlined {
+  padding: 8px;
+  border: 1px solid rgba(0,128,0,0.80);
+}
+
+.grouped-window-list-thumbnail-menu .item-box:selected {
+  color: #1a938b;
+  background-color: rgba(0,128,0,0.80);
+  border: 0px solid rgba(0,128,0,0.80);
 }
 
 /* ===================================================================
- * Sound Applet (status/volume.js)
- * ===================================================================*/
+* Sound Applet (status/volume.js)
+* ===================================================================*/
 
 .sound-button-container {
 	padding-right: 3px;
@@ -1693,8 +1731,8 @@ background-color: #232527;
 
 .sound-button:hover {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 .sound-button StIcon {
@@ -1745,8 +1783,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Workspace Switcher applet (workspaceSwitcher.js)
- * ===================================================================*/
+* Workspace Switcher applet (workspaceSwitcher.js)
+* ===================================================================*/
 
 #workspaceSwitcher {
 	spacing: 0px;
@@ -1763,20 +1801,20 @@ background-color: #232527;
 
 .workspace-button:outlined {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 .workspace-button:hover,
 .workspace-button:outlined:hover {
 	background-gradient-direction: vertical;
-        background-gradient-start: rgba(0,128,0,0.80);
-        background-gradient-end: rgba(0,128,0,0.80);
+	background-gradient-start: rgba(0,128,0,0.80);
+	background-gradient-end: rgba(0,128,0,0.80);
 }
 
 /* ===================================================================
- * Panel Launchers Applet (panelLaunchers.js)
- * ===================================================================*/
+* Panel Launchers Applet (panelLaunchers.js)
+* ===================================================================*/
 
 #panel-launchers-box {
 	padding-left: 0px;
@@ -1789,7 +1827,7 @@ background-color: #232527;
 }
 
 .panel-launcher:hover {
-        border-image: url("item-hover.png") 6;
+	border-image: url("item-hover.png") 6;
 }
 
 .panel-launcher-add-dialog-content-box {
@@ -1831,20 +1869,20 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Overview corner
- * ===================================================================*/
+* Overview corner
+* ===================================================================*/
 
 #overview-corner {
 	background-image: url("overview.png");
 }
 
-#overview-corner:hover {    
-    background-image:  url("overview-hover.png");
+#overview-corner:hover {
+	background-image:  url("overview-hover.png");
 }
 
 /* ===================================================================
- * Applets (applet.js)
- * ===================================================================*/
+* Applets (applet.js)
+* ===================================================================*/
 
 .applet-box {
 	padding-left: 5px;
@@ -1854,8 +1892,8 @@ background-color: #232527;
 }
 
 .applet-box:hover {
-        border-image: url("item-hover.png") 6;
-        color: #326b65;
+	border-image: url("item-hover.png") 6;
+	color: #326b65;
 }
 
 .applet-label {
@@ -1871,13 +1909,13 @@ background-color: #232527;
 
 .applet-icon:hover,
 .applet-box:hover > .applet-icon {
-        color: #326b65;
-        icon-shadow: white 0px 0px 3px;
+	color: #326b65;
+	icon-shadow: white 0px 0px 3px;
 }
 
 /* ===================================================================
- * Workspace OSD
- * ===================================================================*/
+* Workspace OSD
+* ===================================================================*/
 
 .workspace-osd {
 	color: #326b65;
@@ -1913,8 +1951,8 @@ background-color: #232527;
 }
 
 /* ===================================================================
- * Notification Applet
- * ===================================================================*/
+* Notification Applet
+* ===================================================================*/
 
 .notification-applet-padding {
 	padding: .5em 1em;
@@ -1926,68 +1964,68 @@ background-color: #232527;
 
 /* Check Boxes */
 .check-box CinnamonGenericContainer {
-    spacing: .2em;
-    min-height: 30px;
-    padding-top: 2px;
+	spacing: .2em;
+	min-height: 30px;
+	padding-top: 2px;
 }
 
 .check-box StBin {
-    width: 24px;
-    height: 18px;
-    background-image: url("checkbox-off.svg");
+	width: 24px;
+	height: 18px;
+	background-image: url("checkbox-off.svg");
 }
 
 .check-box:focus StBin {
-    background-image: url("checkbox-off-focused.svg");
+	background-image: url("checkbox-off-focused.svg");
 }
 
 .check-box:checked StBin {
-    background-image: url("checkbox.svg");
+	background-image: url("checkbox.svg");
 }
 
 .check-box:focus:checked StBin {
-    background-image: url("checkbox-focused.svg");
+	background-image: url("checkbox-focused.svg");
 }
 
 .check-box StLabel {
-   font-weight: normal;
+	font-weight: normal;
 }
 
 .radiobutton CinnamonGenericContainer {
-    spacing: .2em;
-    height: 26px;
-    padding-top: 2px;
+	spacing: .2em;
+	height: 26px;
+	padding-top: 2px;
 }
 
 .radiobutton StBin {
-    width: 22px;
-    height: 22px;
-    background-image: url("radiobutton-off.svg");
-    border-radius: 15px;
+	width: 22px;
+	height: 22px;
+	background-image: url("radiobutton-off.svg");
+	border-radius: 15px;
 }
 
 .radiobutton:focus StBin {
-    background-image: url("radiobutton-off.svg");
+	background-image: url("radiobutton-off.svg");
 }
 
 .radiobutton:checked StBin {
-    background-image: url("radiobutton.svg");
+	background-image: url("radiobutton.svg");
 }
 
 .radiobutton:focus:checked StBin {
-    background-image: url("radiobutton.svg");
+	background-image: url("radiobutton.svg");
 }
 
 .radiobutton StLabel {
-   padding-top: 4px;
-   font-size: 0.9em;
-   box-shadow: none;
+	padding-top: 4px;
+	font-size: 0.9em;
+	box-shadow: none;
 }
 /* ===================================================================
- * Network Data Usage Monitor applet
- * ===================================================================*/
- 
- /* These settings govern the width of the Applet and the space taken by the font.*/
+* Network Data Usage Monitor applet
+* ===================================================================*/
+
+/* These settings govern the width of the Applet and the space taken by the font.*/
 
 .numa-left {
 	text-align: center;
@@ -2003,43 +2041,43 @@ background-color: #232527;
 	/*font-size: 95%;*/
 }
 
-/* The following are the styles for the Applet backgrounds - names are self explanitory 
+/* The following are the styles for the Applet backgrounds - names are self explanitory
 The colour parameters are red, green, blue, and transparency or a name */
 
 .numa-not-connected {
 	background-color: rgba(0,0,0,0.0);
- 	border-radius: 10px;
+	border-radius: 10px;
 }
 
 .numa-connected {
 	background-color: rgba(0,0,0,0);
- 	border-radius: 10px;
+	border-radius: 10px;
 }
 
 .numa-alert {
-        border-image: url("item-active.png") 4;
+	border-image: url("item-active.png") 4;
 	color: #008000;
 }
 
 .numa-limit-exceeded {
-        border-image: url("item-active.png") 4;
+	border-image: url("item-active.png") 4;
 	color: #008000;
 
 }
 
 /* ===================================================================
- * Snap/Tile OSD Popup
- * ===================================================================*/
+* Snap/Tile OSD Popup
+* ===================================================================*/
 
 .snap-osd {
-    font-size: 18pt;
-    border-radius: 24px;
-    background-color: rgba(55,55,55,0.9);
-    border: 2px solid rgba(92,176,39,1);
-    color: #326b65;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    text-align: center;    
+	font-size: 18pt;
+	border-radius: 24px;
+	background-color: rgba(55,55,55,0.9);
+	border: 2px solid rgba(92,176,39,1);
+	color: #326b65;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align: center;
 }
